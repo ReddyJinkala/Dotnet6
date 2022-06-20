@@ -14,7 +14,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
   dotNetFramework: 'net6.0'
-  dotNetVersion: '6.0.300'
+  dotNetVersion: '6.0.600'
   targetRuntime: 'linux-x64'
 
 stages:
