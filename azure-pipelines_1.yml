@@ -36,6 +36,7 @@ stages:
         customCommand: 'run test --watch=false'
 
     - task: PublishBuildArtifacts@1
+      displayName: Publish Buils Artifacts 
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
