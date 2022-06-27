@@ -1,0 +1,12 @@
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 as base
+WORKDIR /app
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 as build
+WORKDIR /src
+
+RUN apt-get update
+RUN apt-get  -y install curl gnupg
+RUN curl -sL https://www.nodesource.com/setup_16.X  | bash -
+RUN apt-get -y install nodejs
+
+
